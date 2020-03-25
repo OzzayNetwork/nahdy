@@ -30,6 +30,7 @@ Primary use:	Travel, travel booking
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Merienda:400,700|Muli:300,400,500,600,700,800,900|Playfair+Display:400,500,600,700,800,900&amp;display=swap');
 
 * {
 	margin:  0;
@@ -37,13 +38,14 @@ Primary use:	Travel, travel booking
 }
 
 html {
-	font-family:              sans-serif;
+	font-family:sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
 
 body {
 	margin: 0;
+	font-family: 'Muli', sans-serif;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
@@ -921,17 +923,22 @@ input[type=radio]:checked:before {
 }
 
 .tours-type-slider .tours_type_item .content-item {
-	width:          100%;
-	position:       absolute;
-	top:            50%;
-	left:           0;
-	color:          #fff;
-	font-size:      16px;
-	text-align:     center;
-	pointer-events: none;
-	font-style:     normal;
-	text-transform: uppercase;
-	transform:      translateY(-50%);
+	width: 100%;
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    pointer-events: none;
+    font-style: normal;
+    text-transform: capitalize;
+    left: 60px;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-family: 'Merienda', cursive;
+    font-size: 22px;
+    line-height: normal;
 }
 
 .tours-type-slider .tours_type_item .tours-type__item__image {
@@ -945,7 +952,7 @@ input[type=radio]:checked:before {
 }
 
 .tours-type-slider .tours_type_item .tours-type__item__image img {
-	border-radius: 50%;
+/*	border-radius: 50%;*/
 	filter: brightness(0.5);
 }
 
@@ -1088,11 +1095,20 @@ input[type=radio]:checked:before {
 }
 
 .shortcode_title .title_primary {
+/*
 	margin:         0;
 	line-height:    1.333em;
 	font-weight:    700;
 	text-transform: uppercase;
 	color:          inherit;
+*/
+	
+	position: relative;
+    z-index: 1;
+    font-weight: 700;
+    line-height: 1.2em;
+	font-size: 40px;
+	text-transform: capitalize;
 }
 
 .shortcode_title.title-underline {
@@ -2273,7 +2289,7 @@ input[type=radio]:checked:before {
 }
 
 .images_single_left .tour_after_title .travel_tour-product-rating .star-rating:before {
-	color: #ffb300;
+	color: #9ac133;
 }
 
 .images_single_left .tour_after_title .travel_tour-product-rating .travel_tour-review-link {
@@ -2725,11 +2741,11 @@ input[type=radio]:checked:before {
 }
 
 .travel_tour .star-rating span, .travel_tour-page .star-rating span {
-	color: #ffb300;
+	color: #9ac133;
 }
 
 .travel_tour .star-rating:before, .travel_tour-page .star-rating:before {
-	color: #ffb300;
+	color: #9ac133;
 }
 
 .travel_tour ul.products.wrapper-tours-slider, .travel_tour-page ul.products.wrapper-tours-slider {
@@ -3481,12 +3497,12 @@ input[type=radio]:checked:before {
 }
 
 .comment-respond p.stars {
-	color: #ffb300;
+	color: #9ac133;
 }
 
 #reviews .comment-text .star-rating {
 	float: right;
-	color: #ffb300;
+	color: #9ac133;
 }
 
 .comments-area .comment-respond-area #respond.comment-respond .comment-reply-title {
@@ -5622,7 +5638,7 @@ input[type=radio]:checked:before {
 	letter-spacing: 4px;
 	margin-top:     12px !important;
 	font-weight:    normal;
-	color:          #ffb300;
+	color:          #9ac133;
 }
 
 .item_rating .star-rating:before {
@@ -6232,6 +6248,7 @@ input[type=radio]:checked:before {
 	-moz-user-select:            none;
 	-ms-user-select:             none;
 	user-select:                 none;
+	overflow: hidden;
 }
 
 .owl-carousel.owl-rtl {
@@ -6989,7 +7006,7 @@ input[type=radio]:checked:before {
 	margin-top:    20px;
 	display:       inline-block;
 	color:         #fff;
-	background:    #ffb300;
+	background:    #9ac133;
 	font-size:     16px;
 	padding:       9px 28px;
 	border-radius: 0;
@@ -6998,7 +7015,7 @@ input[type=radio]:checked:before {
 
 .content-slider .btn-slider:hover {
 	background: #fff;
-	color:      #ffb300;
+	color:      #9ac133;
 }
 
 .sc-gallery .gallery_item-wrap {
@@ -8873,4 +8890,56 @@ input[type=radio]:checked:before {
                               lines you want to be 
                               displayed */
     -webkit-box-orient: vertical;
+}
+
+.section-pattern{
+	background-color: #efefef;
+	background-image: url("images/topo-map.png");
+}
+.px-20{
+	padding: 0px 105px;
+}
+.section-map{
+	background: url("images/map-pattern.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.carousel-inner>.item>img{
+	filter: brightness(0.4);
+}
+.more-information{
+	background: #272727;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 30px;
+	padding-bottom: 50px;
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    z-index: 1000;
+	color:rgba(255,255,255,0.60);
+	display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+	background-image: url("images/topo-map2.png");
+	display: none;
+}
+
+.tours_type_item:hover .more-information{
+	display: flex;
+}
+.more-info-title{
+	font-family: 'Merienda', cursive;
+    font-size: 22px;
+	color: #9ac133;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+.more-park{
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	cursor: pointer;
+
 }

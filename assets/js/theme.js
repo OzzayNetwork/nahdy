@@ -244,10 +244,14 @@ jQuery(window).load(function () {
 });
 jQuery(window).ready(function () {
 	custom_js.generateCarousel();
+	
+	
 });
 /* ---------------------------------------------
  Scripts resize
  --------------------------------------------- */
 jQuery(window).on("resize", function () {
 	custom_js.generateCarousel();
+	
+	
 });
