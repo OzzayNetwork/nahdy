@@ -75,7 +75,7 @@ h6 {
 }
 
 .wrapper-footer {
-	background: #414b4f;
+/*	background: #414b4f;*/
 	color:      #ccc;
 }
 
@@ -96,13 +96,18 @@ h6 {
 }
 
 .wrapper-footer .main-top-footer {
-	font-size:     13px;
+	font-size:     16px;
 	border-bottom: 1px solid #5b6366;
 }
 
 .wrapper-footer .main-top-footer .widget-title {
-	color:     #fff;
-	font-size: 18px;
+	position: relative;
+    font-weight: 600;
+    color: #9ac133;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    text-transform: capitalize;
+	font-size: 20px;
 }
 
 .widget-area aside .widget-title:before {
@@ -114,7 +119,9 @@ h6 {
 }
 
 .list-arrow li a {
-	border-bottom: 1px solid #5b6366;
+	border-bottom: 0px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .list-arrow li a:after {
