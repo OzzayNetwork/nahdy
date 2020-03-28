@@ -241,9 +241,20 @@ jQuery(window).load(function () {
 	custom_js.generateCarousel();
 	custom_js.singleSlider();
 	custom_js.stickyHeaderInit();
+	
+	
+	
+	
 });
 jQuery(window).ready(function () {
 	custom_js.generateCarousel();
+	
+	
+	
+//	initializing wow.js
+    new WOW().init(); 
+	
+
 	
 	
 });
@@ -252,6 +263,6 @@ jQuery(window).ready(function () {
  --------------------------------------------- */
 jQuery(window).on("resize", function () {
 	custom_js.generateCarousel();
-	
+//	initialize wow .js
 	
 });

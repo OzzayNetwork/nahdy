@@ -647,10 +647,67 @@ h6 {
 	.width-logo {
 		width: 140px;
 	}
-
+	
+	#mobile-demo li {
+		
+		position: relative;
+		display: block;
+		position: relative;
+		display: block;
+		border-bottom: 1px solid rgba(0,0,0,0.10);
+	}
+	
+	
 	#mobile-demo li a, .icon-toggle {
 		color: #fff;
 	}
+	
+	#mobile-demo li a{
+		position: relative;
+		display: block;
+		line-height: 24px;
+		padding: 10px 20px;
+		font-size: 15px;
+		color: #404040;
+		text-transform: capitalize;
+	}
+	
+	#mobile-demo .sub-menu{
+		display: none;
+		transform: .8s;
+		margin-left: 0px;
+	}
+	
+	.sub-menu li{
+		margin-left: 0px !important;
+		padding-left: 17px;
+	}
+	
+	#mobile-demo .dropdown-btn{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		width: 44px;
+		height: 44px;
+		text-align: center;
+		font-size: 16px;
+		line-height: 44px;
+		color: #404040;
+		cursor: pointer;
+		z-index: 5;
+		display: block;
+	}
+	
+	#mobile-demo .sub-menu > li:first-child{
+		border-top: 1px solid rgba(0,0,0,0.10) !important;
+	}
+	
+	#mobile-demo .sub-menu > li{
+		position: relative;
+   		 display: block;
+   		 border-bottom: 1px solid rgba(0,0,0,0.10) !important;
+	}
+
 
 	#mobile-demo li.current-menu-item > a, #mobile-demo li.current-menu-item > span {
 		color: #9ac133;
@@ -661,7 +718,7 @@ h6 {
 	}
 
 	#mobile-demo {
-		background: #232323;
+		background: white;
 	}
 
 	#mobile-demo .navbar-nav > li > a, #mobile-demo .navbar-nav > li > span {
@@ -690,12 +747,12 @@ h6 {
 }
 
 .tours-type-slider .owl-controls .owl-dot span {
-	border-color: rgba(255, 255, 255, 0.6);
+	border-color: #9ac133ad;
 }
 
 .tours-type-slider .owl-controls .owl-dot.active span, .tours-type-slider .owl-controls.clickable .owl-dot:hover span {
-	background:   #fff;
-	border-color: #fff;
+	background:  #9ac133;
+	border-color: #9ac133;
 }
 
 .tour-reviews-item .reviews-item-info .reviews-item-rating i {
