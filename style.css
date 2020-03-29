@@ -234,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-	margin-bottom: 15px;
+/*	margin-bottom: 15px;*/
 }
 
 p:last-child {
@@ -5916,7 +5916,7 @@ input[type=radio]:checked:before {
 
 .wrapper-footer .wrapper-copyright {
 	padding-bottom: 15px;
-	padding: 26px 0px;
+	padding: 26px 15px;
 }
 
 .wrapper-footer a {
@@ -5955,7 +5955,7 @@ input[type=radio]:checked:before {
 
 .wrapper-footer ul li {
 	list-style: none;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 
 .list-arrow li {
@@ -9061,6 +9061,17 @@ body{
 .menu-mobile-effect .fs1{
 	font-size: 3rem;
 }
+.write-some{
+	padding: 20px;
+    line-height: normal;
+}
+.p-0{
+	padding: 0px !important;
+}
+.m-0{
+	margin: 0px !important;
+}
+/*
 @media screen and (max-width: 992px) {
  .more-information {
    	left: 25px;
@@ -9075,18 +9086,36 @@ body{
 		font-size: 60px;
 	}
 }
+*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
  
 	.content-slider.carousel-caption h1{
 		font-size: 44px !important;
+	}
+	
+	.px-20{
+		padding:0px 15px !important;
+	}
+	.more-information{
+		left: 16px !important;
+		width: 342px !important;
+	}
+	
+	.content-slider.carousel-caption h1{
+		font-size: 60px;
+	}
+	.tours-type-slider .tours_type_item .content-item{
+		font-size: 16px;
+		left: 34px;
+		bottom: 16px;
 	}
 }
 
 @media screen and (max-width: 480px) {
  .more-information {
    left: 15px;
-	 width: 371px;
+	 width: 320px;
   }
 	.tours-type-slider .tours_type_item .content-item{
 		font-size: 16px;
@@ -9106,6 +9135,12 @@ body{
 		font-size: 18px;
 	}
 	.mr-30px{
+		margin-right: 0px !important;
+	}
+	.px-20{
+		padding:0px 15px !important;
+	}
+	.wrapper-footer ul li:first-child{
 		margin-right: 0px !important;
 	}
 }
