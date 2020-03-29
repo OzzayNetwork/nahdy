@@ -9076,6 +9076,19 @@ body{
 .m-0{
 	margin: 0px !important;
 }
+.more-information p{
+	overflow: hidden;
+    box-sizing: content-box;
+    width: 100%;
+    /* font-size: 16px; */
+    /* line-height: 24px; */
+    /* font-family: Helvetica, sans-serif; */
+    max-lines: 3;
+    height: 150px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
 /*
 @media screen and (max-width: 992px) {
  .more-information {
