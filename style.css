@@ -5932,6 +5932,10 @@ input[type=radio]:checked:before {
 	position: relative;
 	background-image: url("images/2.jpg");
 /*	padding-top: 85px;*/
+	
+	background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .wrapper-footer-newsletter:before{
@@ -5956,6 +5960,7 @@ input[type=radio]:checked:before {
 .wrapper-footer ul li {
 	list-style: none;
 	margin-bottom: 0px;
+	padding: 5px 10px 5px 0px;
 }
 
 .list-arrow li {
@@ -9143,6 +9148,25 @@ body{
 	.wrapper-footer ul li:first-child{
 		margin-right: 0px !important;
 	}
+	
+	.wrapper-footer ul li{
+		font-size: 14px;
+	}
+	.list-arrow li a{
+		font-size: 14px;
+	}
+/*
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+		height: 100vh;
+		width: fit-content;
+	}
+	
+	..carousel-inner{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+*/
 }
 
 @media  screen and (max-width: 1023px)
