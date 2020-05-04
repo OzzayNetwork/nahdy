@@ -18,6 +18,9 @@
 	<link rel="stylesheet" href="assets/css/travel-setting.css" type="text/css" media="all">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	
+<!--	maps-->
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+	
 <!--	icons-->
 	<link rel="stylesheet" href="assets/css/icon_fonts/css/icon_set_1.css" type="text/css" media="all">
 	<link rel="stylesheet" href="assets/css/icon_fonts/css/icon_set_2.css" type="text/css" media="all">
@@ -1106,6 +1109,20 @@ It has diverse scenery - woodlands to wide open plains with wandering riverbanks
 					</div>
 				</div>
 			</div>
+			
+			<!--maps-->
+			<div class="section-white padding-top-6x">
+				<div class="container-fluid">
+					<div class="shortcode_title title-center title-decoration-bottom-center wow fadeInUp"  data-wow-delay="0ms" data-wow-duration="1000ms">
+						<div class="title_subtitle">East Africa</div>
+						<h3 class="title_primary">Explore the continent's great</h3><span class="line_after_title"></span>
+					</div>
+					<div class="map-container"  id="map">
+					
+					</div>
+				</div>
+			</div>
+			<!--maps-->
 
 			<div class="bg__shadow padding-top-6x padding-bottom-6x section-background d-none" style="background-image:url(images/home/bg-pallarax.jpg)">
 				<div class="container">
@@ -1128,7 +1145,7 @@ It has diverse scenery - woodlands to wide open plains with wandering riverbanks
 				</div>
 			</div>
 
-			<div class="section-white padding-top-6x padding-bottom-6x d-none">
+			<div class="section-white padding-top-6x padding-bottom-6x">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-4">
@@ -1368,6 +1385,8 @@ It has diverse scenery - woodlands to wide open plains with wandering riverbanks
 <script type='text/javascript' src='assets/js/theme.js'></script>
 <script type='text/javascript' src='assets/js/custom.js'></script>
 	
+<!--	mapps-->
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>	
 <!--	instagram post-->
 		<script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
 	<script type="text/javascript">
@@ -1375,6 +1394,45 @@ It has diverse scenery - woodlands to wide open plains with wandering riverbanks
 		
 		
 	</script>
+	
+<!--	mapping script-->
+	<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoia2VsdmluOTkiLCJhIjoiY2s5cnlubHpjMGhwejNscWtlNDc5azlwNSJ9.hyvwpkm3ws8y3CphoepFvg';
+	var map = new mapboxgl.Map({
+	container: 'map',
+	style: 'mapbox://styles/kelvin99/ck9saeydi5rro1ilcf2dxqyok',
+	center: [40.958984, 0],
+	zoom: 9
+	});
+		
+		jQuery(document).ready(function(){
+			map.fitBounds([
+			[32.958984, -12.353521],
+			[43.50585, 5.615985]
+			]);
+		});
+		
+		
+		map.on('click', function(e) {
+		  var features = map.queryRenderedFeatures(e.point, {
+			layers: ['eastafricaparks'] // replace this with the name of the layer
+		  });
+
+		  if (!features.length) {
+			return;
+		  }
+
+		  var feature = features[0];
+
+		  var popup = new mapboxgl.Popup({ offset: [0, -15] })
+			.setLngLat(feature.geometry.coordinates)
+			.setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
+			.addTo(map);
+		});
+		
+	
+	</script>
+	
 
 </body>
 
