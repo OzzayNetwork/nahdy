@@ -964,7 +964,7 @@ It has diverse scenery - woodlands to wide open plains with wandering riverbanks
 					
 				</div>
 			</div>
-			<div class="section-white padding-top-6x padding-bottom-6x">
+			<div class="section  padding-top-6x padding-bottom-6x">
 				<div class="container">
 					<div class="shortcode_title title-center title-decoration-bottom-center wow fadeInUp"  data-wow-delay="0ms" data-wow-duration="1000ms">
 						<h3 class="title_primary">East Africa</h3><span class="line_after_title"></span>
@@ -1385,6 +1385,7 @@ It has diverse scenery - woodlands to wide open plains with wandering riverbanks
 <script type='text/javascript' src='assets/js/theme.js'></script>
 <script type='text/javascript' src='assets/js/custom.js'></script>
 	
+	
 <!--	mapps-->
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>	
 <!--	instagram post-->
@@ -1426,10 +1427,26 @@ It has diverse scenery - woodlands to wide open plains with wandering riverbanks
 
 		  var popup = new mapboxgl.Popup({ offset: [0, -15] })
 			.setLngLat(feature.geometry.coordinates)
-			.setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
+			.setHTML('<div class="map-park-title"><img src="images/map-img/'+ feature.properties.img +'"><h4 class="more-info-title">' + feature.properties.name + '</h4></div><hr><p>' + feature.properties.description + '</p>')
 			.addTo(map);
 		});
 		
+		map.on('click', function(e) {
+		  var features = map.queryRenderedFeatures(e.point, {
+			layers: ['eastbitches'] // replace this with the name of the layer
+		  });
+
+		  if (!features.length) {
+			return;
+		  }
+
+		  var feature = features[0];
+
+		  var popup = new mapboxgl.Popup({ offset: [0, -15] })
+			.setLngLat(feature.geometry.coordinates)
+			.setHTML('<div class="map-park-title"><img src="images/map-img/'+ feature.properties.image +'"><h4 class="more-info-title">' + feature.properties.name + '</h4></div><hr><p>' + feature.properties.description + '</p>')
+			.addTo(map);
+		});
 	
 	</script>
 	
