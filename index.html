@@ -771,7 +771,7 @@
 				<div class="container-fluid px-20">
 					<div class="shortcode_title title-center title-decoration-bottom-center">
 						<div class="title_subtitle">East Africa</div>
-						<h3 class="title_primary">Safaris and Accomodation</h3><span class="line_after_title"></span>
+						<h3 class="title_primary">E. Africa Safiris</h3><span class="line_after_title"></span>
 					</div>
 					<div class="wrapper-tours-slider wrapper-tours-type-slider">
 						<div class="tours-type-slider" data-dots="true" data-nav="true" data-responsive='{"0":{"items":1}, "480":{"items":1}, "768":{"items":2}, "992":{"items":2}, "1200":{"items":3}}'>
@@ -1408,10 +1408,15 @@ It has diverse scenery - woodlands to wide open plains with wandering riverbanks
 		
 		jQuery(document).ready(function(){
 			map.fitBounds([
-			[32.958984, -12.353521],
-			[43.50585, 5.615985]
+			[40.958984, -12.353521],
+			[33.50585, 5.615985]
 			]);
 		});
+		
+		// Add zoom and rotation controls to the map.
+		map.addControl(new mapboxgl.NavigationControl());
+		// disable map zoom when using scroll
+		map.scrollZoom.disable();
 		
 		
 		map.on('click', function(e) {
@@ -1427,7 +1432,7 @@ It has diverse scenery - woodlands to wide open plains with wandering riverbanks
 
 		  var popup = new mapboxgl.Popup({ offset: [0, -15] })
 			.setLngLat(feature.geometry.coordinates)
-			.setHTML('<div class="map-park-title"><img src="images/map-img/'+ feature.properties.img +'"><h4 class="more-info-title">' + feature.properties.name + '</h4></div><hr><p>' + feature.properties.description + '</p>')
+			.setHTML('<div class="map-park-title"><img src="images/map-img/'+ feature.properties.img +'"><h4 class="more-info-title">' + feature.properties.name + '</h4></div><div class="map-discription"><hr><i class="mb-2">'+ feature.properties.size +'</i><p>' + feature.properties.description + '</p></div>')
 			.addTo(map);
 		});
 		
@@ -1444,7 +1449,7 @@ It has diverse scenery - woodlands to wide open plains with wandering riverbanks
 
 		  var popup = new mapboxgl.Popup({ offset: [0, -15] })
 			.setLngLat(feature.geometry.coordinates)
-			.setHTML('<div class="map-park-title"><img src="images/map-img/'+ feature.properties.image +'"><h4 class="more-info-title">' + feature.properties.name + '</h4></div><hr><p>' + feature.properties.description + '</p>')
+			.setHTML('<div class="map-park-title"><img src="images/map-img/'+ feature.properties.image +'"><h4 class="more-info-title">' + feature.properties.name + '</h4></div><div class="map-discription"><hr><p>' + feature.properties.description + '</p></div>')
 			.addTo(map);
 		});
 	
