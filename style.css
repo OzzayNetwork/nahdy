@@ -9265,3 +9265,95 @@ body{
 	margin-bottom: 15px;
 	
 }
+
+/*tours by kevoh*/
+.tour-container{
+	box-shadow: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+	margin: 0.65em;
+	position: relative;
+}
+.tour-container .tour-info-container{
+	display: block;
+/*    border: 1px solid rgba(255, 255, 255, 0.5);*/
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);
+    top: 1em;
+    left: 1em;
+    right: 1em;
+    bottom: 1em;
+    padding: 0.35em 1.5em;
+    z-index: 9;
+}
+.tour-2-container h1{
+	font-size: 1.85em;
+    line-height: 1em;
+	font-family: muli;
+	text-transform: uppercase;
+	font-weight:800;
+	letter-spacing: -0.65px;
+	font-weight: 900;
+	margin: .67em 0;
+    margin-bottom: 0.65em;
+	margin-top: 20px;
+/*	color: #3c4251;*/
+}
+.tour-2-container h1 span {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1em;
+}
+.tour-2-container h4{
+	font-family: muli;
+	text-transform: uppercase;
+	line-height: 1.1;
+	letter-spacing: 0;
+	margin-top: 10px;
+    margin-bottom: 10px;
+	font-size: 1.50rem;
+    font-weight: 800;
+	position: absolute;
+    right: 1.15em;
+    bottom: 0.35em;
+    top: auto;
+    z-index: 9;
+    text-align: right;
+}
+.tour-2-container h4 span{
+	font-size: 14px;
+    font-weight: normal;
+    line-height: 1.714em;
+}
+.tour-2-container{
+	color: #020202;
+	
+}
+.tour-img{
+	transition:0.3s;
+}
+.tour-2-container:hover .tour-info-container{
+	cursor: pointer;
+	bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white !important;
+}
+.tour-container .tour-info-container{
+	transition:all ease-in-out .3s;
+}
+.tour-2-container:hover .tour-info-container h1{
+	color: white !important;
+}
+.tour-2-container:hover .tour-img{
+	transform: scale(1.2);
+}
+.font-12{
+	font-size: 12px !important;
+}
+.font-18{
+	font-size: 18px!important;
+}
