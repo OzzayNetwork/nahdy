@@ -40,17 +40,17 @@
 						<aside id="text-7" class="widget widget_text">
 							<div class="textwidget">
 								<ul class="top_bar_info clearfix">
-									<li><i class="fa fa-phone"></i> 0123456789</li>
+									<li><i class="fa fa-phone"></i><a href="tel:+254737672116 ">+254 737 672 116 </a></li>
 									<li class="hidden-info">
-										<i class="fa fa-map-marker"></i> 1010 Moon ave, New York, NY US
+										<i class="fa fa-map-marker"></i> Along Kitisuru Rd, Nairobi Kenya
 									</li>
 								</ul>
 							</div>
 						</aside>
 						<aside id="travel_login_register_from-2" class="widget widget_login_form">
-							<span class="show_from login"><i class="fa fa-user"></i>Login</span>
+							<span class="show_from login d-none"><i class="fa fa-user"></i>Login</span>
 
-							<div class="form_popup from_login" tabindex="-1">
+							<div class="form_popup from_login d-none" tabindex="-1">
 								<div class="inner-form">
 									<div class="closeicon"></div>
 									<h3>Login</h3>
@@ -74,7 +74,7 @@
 									<a href="#" title="Lost your password?" class="lost-pass">Lost your password?</a>
 								</div>
 							</div>
-							<span class="register_btn">Register</span>
+							<span class="register_btn d-none">Register</span>
 							<div class="form_popup from_register" tabindex="-1">
 								<div class="inner-form">
 									<div class="closeicon"></div>
@@ -110,61 +110,77 @@
 		<div class="navigation-menu">
 			<div class="container">
 				<div class="menu-mobile-effect navbar-toggle button-collapse" data-activates="mobile-demo">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+					<div class="fs1" aria-hidden="true" data-icon="a"></div>
 				</div>
 				<div class="width-logo sm-logo">
-					<a href="index.html" title="Travel" rel="home">
-						<img src="images/logo_sticky.png" alt="Logo" width="474" height="130" class="logo_transparent_static">
+					<a href="#" title="Travel" rel="home">
+						<img src="images/logo.png" alt="Logo" width="474" height="130" class="logo_transparent_static">
 						<img src="images/logo_sticky.png" alt="Sticky logo" width="474" height="130" class="logo_sticky">
 					</a>
 				</div>
 				<nav class="width-navigation">
 					<ul class="nav navbar-nav menu-main-menu side-nav" id="mobile-demo">
-						<li>
-							<a href="#">Home</a>
+						<li class="current-menu-ancestor current-menu-parent">
+							<a href="index.html">Home</a>
+							<ul class="sub-menu d-none">
+								<li><a href="index.html">Home 1 – Video Slider</a></li>
+								<li><a href="home-2.html">Home 2 – Image Slider</a></li>
+								<li><a href="home-3.html">Home 3 – Background Image</a></li>
+								<li><a href="home-4.html">Home 4</a></li>
+ 							</ul>
 						</li>
-						<li class="current-menu-ancestor current-menu-parent menu-item-has-children">
-							<a href="tours.html">Tours</a>
-							<ul class="sub-menu">
-								<li><a href="single-tour.html">Single Tour</a></li>
-								<li><a href="#">Layout</a>
-									<ul class="sub-menu">
-										<li><a href="tours-list.html">Tour List</a></li>
-										<li><a href="tours-2-cols.html">Grid – 2 cols</a></li>
-										<li><a href="tours.html">Grid – 3 cols(width sidebar)</a></li>
-										<li><a href="tours-3-cols.html">Grid – 3 cols (no sidebar)</a></li>
-										<li><a href="tours-4-cols.html">Grid – 4 cols</a></li>
-									</ul>
-								</li>
+						<li class="menu-item-has-children">
+							<a href="#!l">Tours</a>
+							<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+							<ul class="sub-menu animated slideInLeft">
+								<li><a href="kenya-safaris.html">Kenya</a></li>
+								<li><a href=tanzania-safaris.html>Tanzania</a></li>
+								<li><a href="zanzibar-tours.html">Zanzibar beach holiday</a></li>
+								
 							</ul>
 						</li>
-
-						<li><a href="destinations.html">Destinations</a></li><li><a href="blog.html">Blog</a></li>
-
+						
 						<li class="menu-item-has-children">
+							<a href="#!">Parks & Reserves</a>
+							<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>
+							<ul class="sub-menu animated slideInLeft">
+								<li><a href="#">Kenya</a></li>
+								<li><a href="#">Tanzania</a></li>
+								<li><a href="#">Zanzibar beach holiday</a></li>
+								
+							</ul>
+						</li>
+						
+						<li class="menu-item-has-children d-none">
+							<a href="#!">Hotels</a>
+							<ul class="sub-menu animated slideInLeft">
+								<li><a href="#">Kenya</a></li>
+								<li><a href="#">Tanzania</a></li>
+								<li><a href="#">Zanzibar beach holiday</a></li>
+							</ul>
+						</li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li class="menu-item-has-children d-none">
 							<a href="#">Pages</a>
 							<ul class="sub-menu">
-
-
 								<li><a href="gallery.html">Gallery</a></li>
 								<li><a href="travel-tips.html">Travel Tips</a></li>
-								<li><a href="typography.html">Typography</a></li><li><a href="checkout.html">Checkout</a></li>
+								<li><a href="typography.html">Typography</a></li>
+								<li><a href="checkout.html">Checkout</a></li>
 							</ul>
 						</li>
 						<li><a href="contact.html">Contact</a></li>
 						<li class="menu-right">
 							<ul>
 								<li id="travel_social_widget-2" class="widget travel_search">
-									<div class="search-toggler-unit">
+									<div class="search-toggler-unit d-none">
 										<div class="search-toggler">
 											<i class="fa fa-search"></i>
 										</div>
 									</div>
 									<div class="search-menu search-overlay search-hidden">
 										<div class="closeicon"></div>
-										<form role="search" method="get" class="search-form" action="#">
+										<form method="get" class="search-form" action="http://html.physcode.com/travel/tours.html">
 											<input type="search" class="search-field" placeholder="Search ..." value="" name="s" title="Search for:">
 											<input type="submit" class="search-submit font-awesome" value="&#xf002;">
 										</form>
@@ -345,53 +361,59 @@
 		<div class="main-top-footer">
 			<div class="container">
 				<div class="row">
-					<aside class="col-sm-3 widget_text"><h3 class="widget-title">CONTACT</h3>
+					<aside class="col-sm-4 widget_text"><h3 class="widget-title">CONTACT</h3>
 						<div class="textwidget">
 							<div class="footer-info">
-								<p>Lorem ipsum dolor sit amet, cons ectetueradipiscing elit, sed diam nonu my nibh euis motincidunt ut laoreetd
+								<p>Nahdy Travel & Tours Limited <br>
+									P.O. Box 5368-00100 <br>
+									Nairobi, Kenya
 								</p>
 								<ul class="contact-info">
-									<li><i class="fa fa-map-marker fa-fw"></i> 1945 Washington, San Francisco</li>
-									<li><i class="fa fa-phone fa-fw"></i> +1 234 456 7890</li>
+									<li><i class="fa fa-map-marker fa-fw"></i> Along Kitisuru Rd, Nairobi Kenya </li>
+									<li><i class="pe-7s-call"></i> <a href="tel:+254202011066">+254 202 011 066</a> / <a href="tel:+254737672116 ">+254 737 672 116 </a></li>
+									<li><i class="ti-mobile"></i> <a href="tel:254722703479/722-701108">254-722-703479/722-701108</a></li>
+									<li><i class="pe-7s-print"></i> <a href="tel:254722703479/722-701108">+254-20-2011061</a></li>
 									<li>
-										<i class="fa fa-envelope fa-fw"></i><a href="mailto:hello@siteinfo.com"> hello@siteinfo.com</a>
+										<i class="fa fa-envelope fa-fw"></i><a href="mailto:info@nahdytravel.com"> info@nahdytravel.com</a>
 									</li>
 								</ul>
 							</div>
 						</div>
 					</aside>
-					<aside class="col-sm-3 widget_text"><h3 class="widget-title">INFORMATION</h3>
+					<aside class="col-sm-3 widget_text"><h3 class="widget-title">Categories</h3>
 						<div class="textwidget">
-							<ul class="menu list-arrow">
-								<li><a href="#">Press Centre</a></li>
-								<li><a href="#">Travel News</a></li>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Contact Us</a></li>
+							<ul class="menu list-arrow text-capitalize">
+								<li><a href="#">Cumps</a></li>
+								<li><a href="#">Excursions</a></li>
+								<li><a href="#">Bird watching</a></li>
+								<li class="d-none"><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Kenya tanzania safaris</a></li>
+								<li><a href="#">Coasts</a></li>
 							</ul>
 						</div>
 					</aside>
-					<aside class="col-sm-3 widget_text"><h3 class="widget-title">Our Menu</h3>
+					<aside class="col-sm-2 widget_text"><h3 class="widget-title">Our Menu</h3>
 						<div class="textwidget">
-							<ul class="menu list-arrow">
-								<li><a href="#">About us</a></li>
-								<li><a href="#">Career</a></li>
-								<li><a href="#">Terms</a></li>
-								<li><a href="#">Privacy Policy</a></li>
+							<ul class="menu list-arrow text-capitalize">
+								<li><a href="#">home</a></li>
+								<li><a href="#" class="d-none">Career</a></li>
+								<li><a href="#">tours</a></li>
+								<li><a href="#">gallery</a></li>
 								<li><a href="#">Contact</a></li>
 							</ul>
 						</div>
 					</aside>
 					<aside class="col-sm-3 custom-instagram widget_text">
 						<h3 class="widget-title">Instagram</h3>
-						<div class="textwidget">
+						<div class="textwidget" id="pixlee_container">
 							<ul>
-								<li><img src="images/instagram/1.jpg" alt="instagram"></li>
-								<li><img src="images/instagram/2.jpg" alt="instagram"></li>
-								<li><img src="images/instagram/3.jpg" alt="instagram"></li>
-								<li><img src="images/instagram/4.jpg" alt="instagram"></li>
-								<li><img src="images/instagram/5.jpg" alt="instagram"></li>
-								<li><img src="images/instagram/6.jpg" alt="instagram"></li>
+								<li><a href="https://www.instagram.com/p/BkXDLVBH07r/" target="new"><img src="images/instagram/1.jpg" alt="instagram"></a></li>
+								<li><a href="https://www.instagram.com/p/BkVgXCJHB0k/" target="new"><img src="images/instagram/2.jpg" alt="instagram"></a></li>
+								<li><a href="https://www.instagram.com/p/BhEEcUugx3c/" target="new"><img src="images/instagram/3.jpg" alt="instagram"></a></li>
+								<li><a href="https://www.instagram.com/p/BhEB-G1gnFO/" target="new"><img src="images/instagram/4.jpg" alt="instagram"></a></li>
+								<li><a href="https://www.instagram.com/p/BfbmpRSjU1V/" target="new"><img src="images/instagram/5.jpg" alt="instagram"></a></li>
+								<li><a href="https://www.instagram.com/p/BfaPSKODETp/" target="new"><img src="images/instagram/6.jpg" alt="instagram"></a></li>
+								
 							</ul>
 						</div>
 					</aside>
@@ -401,41 +423,46 @@
 		<div class="container wrapper-copyright">
 			<div class="row">
 				<div class="col-sm-6">
-					<div><p>Copyright © 2017 Travel. All Rights Reserved.</p></div>
+					<div><p>Copyright © 2020 Nahdy Tours & Travel. All Rights Reserved.</p></div>
 				</div>
 				<div class="col-sm-6">
 					<aside id="text-5" class="widget_text">
 						<div class="textwidget">
-							<ul class="footer_menu">
-								<li><a href="#">Terms of Use</a></li>
-								<li>|</li>
-								<li><a href="#">Privacy Policy</a></li>
-								<li>|</li>
-								<li><a href="https://twitter.com/physcode"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="https://www.facebook.com/physcode/"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="https://www.instagram.com/physcode/"><i class="fa fa-instagram"></i></a>
-								</li>
-							</ul>
+							<p>
+								<ul class="footer_menu">
+									<li><a href="#" class="d-none">Terms of Use</a></li>
+									<li class="d-none">|</li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li>|</li>
+									<li><a href="https://www.instagram.com/nahdy_tours_kenya/" target="new"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="https://www.instagram.com/nahdy_tours_kenya/" target="new"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://www.instagram.com/nahdy_tours_kenya/" target="new"><i class="fa fa-instagram"></i></a>
+									</li>
+								</ul>
+							</p>
 						</div>
 					</aside>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="wrapper-subscribe" style="background-image: url(images/home/bg_newletter.jpg)">
+	<div class="wrapper-subscribe d-none" style="background-image: url(images/home/bg_newletter.jpg)">
 		<div class="subscribe_shadow"></div>
 		<div class="form-subscribe parallax-section stick-to-bottom form-subscribe-full-width">
 			<div class="shortcode_title text-white title-center title-decoration-bottom-center margin-bottom-3x">
 				<div class="title_subtitle">To receive our best monthly deals</div>
-				<h3 class="title_primary">JOIN THE NEWSLETTER</h3>
+				<h3 class="title_primary">Talk to us</h3>
 				<span class="line_after_title"></span>
 			</div>
 			<div class="form-subscribe-form-wrap">
 				<aside class="mailchimp-container">
 					<form class="epm-sign-up-form" name="epm-sign-up-form" action="#" method="post">
-						<div class="epm-form-field">
-							<label for="epm-email">Email Address</label>
-							<input type="email" placeholder="Email Address" name="epm-email" tabindex="8" class="email" id="epm-email" value="">
+						<div class="row p-0 m-0">
+							<div class="epm-form-field">
+								<label for="epm-email">Write us a message</label>
+								<textarea class="write-some" placeholder="write us something"></textarea>
+								<input type="email" placeholder="Email Address" name="epm-email" tabindex="8" class="email d-none" id="epm-email" value="">
+						</div>
 						</div>
 
 
